@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="74F1BE6FEEAB2B4D48E3903D909E027F6DE8375DF068DFE31A8E8D6EBFB12011B38DD4CC0AA433E0D79EED51F6DB973A3907EE85011ED27FA81912CF30CC1854" Timestamp="1D6119B41680439" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@8b4b63bf123f403ca6baaefd9ca0c887" Id="5b44238c6d8743dfa32df5fd82713eb3" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="f0e014316db4595b60a7e280534b4d9" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="318b66f12fb54aea9f2425bb225e2ca6" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="7f87a2efb9444ce8bfa0b2a686d04652" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@8b4b63bf123f403ca6baaefd9ca0c887" Id="e04e4b68cb2d4805b3a1ee5ba6010d75" Name="Data">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>null</Field1>
+					<Field2>null</Field2>
+					<Field3>0</Field3>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="81fc5aa40c8e4a289187afcb2fff29d3" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="57d5c4f59ed14dfdb1b97640d0789b1b" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="c15b41b0b0b34815963fae71c70f714f" Name="data.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="70797cfff2134382b2d6f245015de806" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="50d16a4c93f94f6391fa4a56cb41b3d2" xmlns="http://www.ni.com/MocCommon">
+					<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@8b4b63bf123f403ca6baaefd9ca0c887" Height="[float]179" Id="1a1c82c7df9e4622aaf7cdf9c5fec6bd" Label="[UIModel]3729a6046e44629ac063a6acfbeb03b" Left="[float]261" TabIndex="[int]0" Top="[float]191" Value="{DataItemBinding Id=e04e4b68cb2d4805b3a1ee5ba6010d75}" Width="[float]215" xmlns="http://www.ni.com/PanelCommon">
+						<ArrayViewer ArrayElement="[UIModel]a059337e969940e0ba092e8f6ebed359" BaseName="[string]String Array Input" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="30790c135a9d4fbfa2c2a922da1bb8c6" IndexVisibility="[Visibility]Collapsed" Label="[UIModel]18d74b5d02344de9a6dc462f73f85a57" Left="[float]6" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]0" Top="[float]21" Value="{ClusterBinding FieldName=Logs}" VerticalScrollBarVisibility="[ScrollBarVisibility]Visible" Width="[float]104">
+							<p.DefaultElementValue>""</p.DefaultElementValue>
+							<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="a059337e969940e0ba092e8f6ebed359" Label="[UIModel]e9b6e55fcdb34c0a95e2536585953f66" VerticalScrollBarVisibility="[ScrollBarVisibility]Auto" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<Label Id="e9b6e55fcdb34c0a95e2536585953f66" IsVisualChild="[bool]False" LabelOwner="[UIModel]a059337e969940e0ba092e8f6ebed359" Left="[float]6" Text="[string]String" Top="[float]-14" xmlns="http://www.ni.com/PanelCommon" />
+							</StringControl>
+						</ArrayViewer>
+						<Label Height="[float]16" Id="18d74b5d02344de9a6dc462f73f85a57" LabelOwner="[UIModel]30790c135a9d4fbfa2c2a922da1bb8c6" Left="[float]6" Text="[string]Logs" Top="[float]1" Width="[float]25" />
+						<ArrayViewer ArrayElement="[UIModel]622ac32bfd8c4ab0ae8e3c2dffe21c71" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="10cc6d8f417a430f8580d8fb91ea66e8" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" Label="[UIModel]7f03fa2d0f324bf18fd0aa51ba8c75fd" Left="[float]9" Orientation="[SMOrientation]Vertical" Rows="[int]1" TabIndex="[int]1" Top="[float]82" Value="{ClusterBinding FieldName=TimeStamps}" Width="[float]184">
+							<p.DefaultElementValue>60052752000;0;Utc</p.DefaultElementValue>
+							<TimeStampTextBox BaseName="[string]Timestamp" Height="[float]24" Id="622ac32bfd8c4ab0ae8e3c2dffe21c71" Label="[UIModel]7442fc907e894a44a65e3228b7ed71b2" Maximum="[PrecisionDateTime]3001-01-01T00:00:00.0" Minimum="[PrecisionDateTime]1600-01-01T00:00:00.0" TabIndex="[int]0" Width="[float]117" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+								<p.ValueFormatter Kind="Time" Format="&quot;HH\\:mm\\:ss&quot;" FractionalSeconds="0" />
+								<Label Height="[float]16" Id="7442fc907e894a44a65e3228b7ed71b2" IsVisualChild="[bool]False" LabelOwner="[UIModel]622ac32bfd8c4ab0ae8e3c2dffe21c71" Left="[float]61" Text="[string]Timestamp" Top="[float]-14" Width="[float]58" xmlns="http://www.ni.com/PanelCommon" />
+							</TimeStampTextBox>
+						</ArrayViewer>
+						<Label Height="[float]16" Id="7f03fa2d0f324bf18fd0aa51ba8c75fd" LabelOwner="[UIModel]10cc6d8f417a430f8580d8fb91ea66e8" Left="[float]9" Text="[string]TimeStamps" Top="[float]62" Width="[float]64" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="27fa1613d5fc4947a6a275ef3123017f" Interval="[int]1" Label="[UIModel]d595627d1c40489a85e1f90574e3e27c" Left="[float]11" TabIndex="[int]2" Top="[float]142" Value="{ClusterBinding FieldName=index}" ValueFormatter="[string]LV:0" ValueType="[Type]Int32" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Height="[float]16" Id="d595627d1c40489a85e1f90574e3e27c" LabelOwner="[UIModel]27fa1613d5fc4947a6a275ef3123017f" Left="[float]11" Text="[string]index" Top="[float]122" Width="[float]29" />
+					</Cluster>
+					<Label Height="[float]16" Id="3729a6046e44629ac063a6acfbeb03b" LabelOwner="[UIModel]1a1c82c7df9e4622aaf7cdf9c5fec6bd" Left="[float]261" Text="[string]Data" Top="[float]171" Width="[float]25" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="8b4b63bf123f403ca6baaefd9ca0c887">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Logs" DataType="String[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="TimeStamps" DataType="Timestamp[]" />
+					<Field FieldAccessPolicy="ReadWrite" Name="index" DataType="Int32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>
